@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/Details/iconfont.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #di{
+            width: 100%;
+            height: 6401.63px;
+            border: solid 1px red;
+            background-color:#f7f7f8 ;
+        }
+        /*上悬浮框*/
+        #di #top{
+            width:100%;
+            height:44px;
+            background-color:white;
+            position: fixed;
+            /*处于顶部*/
+            top: 0;
+            border-radius:2px;
+            z-index: 10
+        }
+        #di #top ul {
+            height: 100%;
+            position: relative;
+            list-style:none;
+            display: flex;
+            /*border: solid 1px red;*/
+
+        }
+        #di #top ul li{
+            height: 100%;
+            /*border: solid 1px red;*/
+            text-align: center;
+            line-height: 37px;
+            flex: 1;
+
+        }
+        #di #top ul .topleft span{
+            margin-left: -40px;
+            font-size: 20px;
+            color:#c8c8c8 ;
+        }
+        #di #top ul .topbuttom span{
+            margin-right: -32px;
+            font-size: 25px;
+            color:#c8c8c8 ;
+        }
+
+
+        /*下悬浮框*/
+        #di #bottom{
+            width: 100%;
+            height: 54px;
+            background-color: white;
+            position: fixed;
+            /*处于底部*/
+            bottom: 0;
+            display:flex;
+            border-radius:1px;
+            z-index: 10
+        }
+        #di #bottom ul{
+            width: 100%;
+            height: 100%;
+            list-style:none;
+            display: flex;
+        }
+
+        #di #bottom ul li{
+            /*border: solid 1px red;*/
+            text-align: center;
+        }
+        #di #bottom ul li div{
+            width: 100%;
+            height: 24px;
+            /*border: solid 1px red;*/
+            margin-top: 6px;
+            line-height: 97%;
+            font-size:25px ;
+            color:#c8c8c8 ;
+        }
+        #di #bottom ul li div:hover{
+            color: #4A90E2;
+        }
+        #di #bottom ul li span{
+            /*border: solid 1px red;*/
+            color:#c8c8c8 ;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+
+        /*图片*/
+        #di #img {
+            width: 100%;
+            height: 375px;
+            border: solid 1px red;
+            position: relative;
+        }
+        #di #img div{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        #di #img div img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        #di #img div:hover{
+            transition: opacity 3s ;
+            opacity: 0;
+        }
+        #di #img div span{
+            position: absolute;
+            background-color: #aaa;
+            top: 346px;
+            left: 330px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: white;
+            opacity: 0.9;
+         }
+
+        /*font 文字*/
+        #di #font{
+            width: 100%;
+            height: 80px;
+            border: solid 1px red;
+            position: relative;
+        }
+        #di #font .font{
+            width: 100%;
+            height: 49%;
+            border:solid 1px red;
+            display: flex;
+        }
+        #di #font #font1{
+            width: 94%;
+            height: 100%;
+            /*border: solid 1px red;*/
+            font-size: 14px;
+            color: #051B28;
+           margin-left: 3%;
+        }
+        /*font1 文字*/
+        #di #font2{
+            width: 100%;
+            height: 84px;
+            border: solid 1px red;
+            position: relative;
+        }
+        #di #font2 div{
+            width: 100%;
+            height: 49%;
+            /*border:solid 1px red;*/
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="di">
+    <!--上悬浮框-->
+    <div id="top">
+        <ul>
+            <li class="topleft">
+                <span class="iconfont" >&#xe606;</span>
+            </li>
+            <li>商品</li>
+            <li>评价</li>
+            <li style="border-bottom:solid red 1px">详情</li>
+            <li class="topbuttom"><span class="iconfont">&#xe636;</span></li>
+        </ul>
+    </div>
+    <!-- 上悬浮框 空-->
+    <div style="width: 100%;height: 44px;position: relative"></div>
+
+
+    <div id="img">
+        <div><img src="//img.alicdn.com/imgextra/i2/2455568780/TB2mLIYeYZnBKNjSZFrXXaRLFXa_!!2455568780.jpg_760x760Q50s50.jpg_.webp" >
+            <span>&nbsp;&nbsp;2/2&nbsp;&nbsp;</span>
+        </div>
+
+        <div><img src="//img.alicdn.com/imgextra/i1/2455568780/O1CN01s4YU0V2EjI3ad8R6n_!!2455568780-0-lubanu-s.jpg_760x760Q50s50.jpg_.webp">
+            <span>&nbsp;&nbsp;1/2&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <div id="font">
+    <div class="font">
+        <p style="color: red;font-size:18px;line-height: 200%;margin-left: 2%;margin-top: 1%">￥</p><span style="color: red;font-size:24px;margin-top: 1%;font-weight: 500;">108.00</span>
+    </div>
+    <div  class="font">
+        <div id="font1">
+        凯瑞玛布丁粉多口味果冻粉免煮自制鸡蛋布丁奶茶店专用甜品原料
+        </div>
+    </div>
+    </div>
+
+    <div id="font2">
+        <div style=";border-bottom:solid 1px #c8c8c8;">
+            <span style="color: #9B9B9B;font-size:14px;padding-left:3%">选择</span>
+            <span style="color:#051B28;font-size:14px;padding-left:2%;">请选择颜色分类</span>
+            <span></span>
+        </div>
+
+        <div></div>
+    </div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!--下悬浮框-->
+    <div id="bottom">
+        <ul>
+            <li style="width: 50px;height: 100%">
+                <div class="iconfont">&#xe7a4;</div>
+                <span>店铺</span>
+            </li>
+
+            <li style="width: 50px;height: 100%">
+                <div class="iconfont">&#xe60d;</div>
+                <span>客服</span>
+            </li>
+
+            <li style="width: 50px;height: 100%">
+                <div class="iconfont">&#xe73d;</div>
+                <span>收藏</span>
+            </li>
+
+            <li style="width:31.2%;height: 100%;background-color:#FF9500;text-align: center;line-height: 380%;color: white;font-size:14px">加入购物车</li>
+            <li style="width:31.2%;height: 100%;background-color:#FF0036;text-align: center;line-height: 380%;color: white;font-size:14px">立即够买</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
