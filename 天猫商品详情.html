@@ -13,8 +13,8 @@
         }
         #di{
             width: 100%;
-            height: 6401.63px;
-            border: solid 1px red;
+            height: 7044.63px;
+            /*border: solid 1px red;*/
             background-color:#f7f7f8 ;
         }
         /*上悬浮框*/
@@ -102,7 +102,7 @@
         #di #img {
             width: 100%;
             height: 375px;
-            border: solid 1px red;
+            /*border: solid 1px red;*/
             position: relative;
         }
         #di #img div{
@@ -134,13 +134,14 @@
         #di #font{
             width: 100%;
             height: 80px;
-            border: solid 1px red;
+            /*border: solid 1px red;*/
             position: relative;
         }
         #di #font .font{
+            background-color: white;
             width: 100%;
             height: 49%;
-            border:solid 1px red;
+            /*border:solid 1px red;*/
             display: flex;
         }
         #di #font #font1{
@@ -153,9 +154,11 @@
         }
         /*font1 文字*/
         #di #font2{
+            background-color: white;
+            margin-top: 3%;
             width: 100%;
             height: 84px;
-            border: solid 1px red;
+            /*border: solid 1px red;*/
             position: relative;
         }
         #di #font2 div{
@@ -164,6 +167,78 @@
             /*border:solid 1px red;*/
             display: flex;
             align-items: center;
+        }
+        /*评价*/
+        #di #evaluation{
+            background-color: white;
+            margin-top: 3%;
+            width: 100%;
+            height: 182px;
+            /*border: solid 1px red;*/
+        }
+        #di #evaluation div{
+            /*border:solid 1px red;*/
+        }
+        #di #evaluation .evaluation{
+            width: 100%;
+            height:43px;
+        }
+
+        #di #evaluation .evaluation ul{
+            width: 100%;
+            height: 100%;
+            list-style:none;
+            display: flex;
+        }
+        #di #evaluation .evaluation li{
+            /*border: solid 1px red;*/
+            text-align: center;
+            margin-left: 3%;
+            margin-top: 2%;
+            border-radius: 50px;
+            font-size:12px;
+            background-color:#FEE;
+            line-height: 205%;
+            color: #666;
+
+        }
+        #di #evaluation #evaluation2{
+            width: 100%;
+            height:33px;
+            display: flex;
+        }
+        #di #evaluation #evaluation2 img{
+            margin-left: 3%;
+            width: 6.5%;
+            height: 76%;
+            border-radius: 50px;
+            margin-top: 0.5%;
+        }
+        #di #evaluation #evaluation2 span{
+            color: #666;
+            font-size: 12px;
+            margin-top: 1.5%;
+            margin-left: 2%;
+        }
+        #di #image{
+            margin-top:3%;
+            width: 100%;
+            height: 86.67%;
+            /*border: solid 1px red;*/
+            position: relative;
+        }
+        #di #image .lazyImg{
+            margin-top: -1.1%;
+           width: 100%;
+        }
+        #di #chanpin{
+            width: 100%;
+            height: 1%;
+            margin-top: 3%;
+            background-color: white;
+            text-align:center;
+            line-height:300%;
+            font-size: 23px;
         }
 
     </style>
@@ -208,18 +283,73 @@
     </div>
 
     <div id="font2">
-        <div style=";border-bottom:solid 1px #c8c8c8;">
+        <div style=";border-bottom:solid 1px #f7f7f8;">
             <span style="color: #9B9B9B;font-size:14px;padding-left:3%">选择</span>
-            <span style="color:#051B28;font-size:14px;padding-left:2%;">请选择颜色分类</span>
-            <span></span>
+            <div style="color:#051B28;font-size:14px;padding-left:2%;">请选择颜色分类</div>
+            <span class="iconfont" style="margin-left:-20%;color: #9B9B9B;font-size:13px;">&#xe62f;</span>
         </div>
 
-        <div></div>
+        <div>
+            <span style="color: #9B9B9B;font-size:14px;padding-left:3%">参数</span>
+            <div style="color:#051B28;font-size:14px;padding-left:2%;">包装方式 包装规格...</div>
+            <span class="iconfont" style="margin-left:-20%;color: #9B9B9B;font-size:13px;">&#xe62f;</span>
+        </div>
     </div>
 
-    <div></div>
-    <div></div>
-    <div></div>
+
+    <div id="evaluation">
+        <div style="width: 100%;height: 29px;display: flex;color:#666;padding-left: 2.4%;line-height:180%;font-size: 15px">
+            商品评价(1491)
+            <b><div style="width:70px;color: red;margin-left: 242%;font-size: 13px">查看全部<span class="iconfont" style="font-size:12px;padding-left: 8%">&#xe62f;</span></div></b>
+        </div>
+
+        <div class="evaluation">
+            <ul>
+                <li style="width: 28%;height: 26px">口感味道很好(24)</li>
+                <li style="width: 21%;height: 26px">性价比高(11)</li>
+                <li style="width: 21%;height: 26px">客服很好(5)</li>
+            </ul>
+        </div>
+
+        <div id="evaluation2">
+            <img src="//wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vFkSPFHuXH*evF8LPmHSXm8GXmZhXHcGPGl-Om--vCIyvmZeMGZIP8R-PC9HMkg4">
+            <span>t**4</span>
+        </div>
+
+        <div class="evaluation" style="width: 100%;height:37px;display: flex"><span style="font-size: 13px;margin-left: 3%;margin-top: 2%;color:#051b28 ">一小包6块，有点贵</span></div>
+
+        <div style="width: 100%;height:30px;color:#666;font-size:10px;padding-top: 2%;padding-left: 3% ">
+            2020-07-21 颜色分类:芒果味75g
+        </div>
+    </div>
+
+
+
+    <div id="chanpin">
+        产品基本信息
+    </div>
+
+    <div id="image">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i1/2455568780/O1CN01zQBP8n2EjHxCilpI7_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i1/2455568780/TB2GUthqAKWBuNjy1zjXXcOypXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i1/2455568780/TB2JgXtqpGWBuNjy0FbXXb4sXXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i3/2455568780/TB2KitGqruWBuNjSszgXXb8jVXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i3/2455568780/TB2mRiVqDlYBeNjSszcXXbwhFXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i1/2455568780/TB26T..h98YBeNkSnb4XXaevFXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i2/2455568780/TB2npqxqxGYBuNjy0FnXXX5lpXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i3/2455568780/TB2UN66qDtYBeNjy1XdXXXXyVXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i2/2455568780/TB2PmXAqqSWBuNjSsrbXXa0mVXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i4/2455568780/TB2WWJ2quOSBuNjy0FdXXbDnVXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i4/2455568780/TB2fKofh5CYBuNkHFCcXXcHtVXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i4/2455568780/TB2fKofh5CYBuNkHFCcXXcHtVXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i2/2455568780/TB2L7ltquuSBuNjSsplXXbe8pXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i2/2455568780/TB2pRl1quuSBuNjSsziXXbq8pXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i3/2455568780/TB2a3ttqpGWBuNjy0FbXXb4sXXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/imgextra/i4/2455568780/TB2Yesfh5CYBuNkHFCcXXcHtVXa_!!2455568780.jpg_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+        <img class="lazyImg" src="//img.alicdn.com/tfs/TB1k9XsQpXXXXXLXpXXXXXXXXXX-750-368.png_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
+    </div>
+
+
 
     <!--下悬浮框-->
     <div id="bottom">
