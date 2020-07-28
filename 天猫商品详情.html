@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/Details/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/buy.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <title>Title</title>
@@ -11,9 +12,13 @@
             margin: 0;
             padding: 0;
         }
+        html{
+            margin: 0;
+            padding: 0;
+        }
         #di{
             width: 100%;
-            height: 7044.63px;
+            height: 7200.63px;
             /*border: solid 1px red;*/
             background-color:#f7f7f8 ;
         }
@@ -240,6 +245,97 @@
             line-height:300%;
             font-size: 23px;
         }
+        #di #usiness{
+            margin-top: 3%;
+            background-color: white;
+            width: 100%;
+            height: 150px;
+        }
+        #di #usiness .top{
+            width: 100%;
+            height: 60px;
+            /*border: solid 1px red;*/
+            display: flex;
+        }
+        #di #usiness .top #left{
+            width:14%;
+            height: 88%;
+            border: solid 1px  #aaa;
+            margin-top: 0.7%;
+            margin-left: 1%;
+        }
+        #di #usiness .top #left img{
+            width: 100%;
+            height: 100%;
+        }
+        #di #usiness .top #right{
+            /*border: 1px solid red;*/
+            width:76%;
+            height: 88%;
+            margin-top: 0.7%;
+            margin-left: 1%;
+        }
+        #di #usiness .top #right ul{
+            width: 100%;
+            height: 100%;
+            list-style:none;
+        }
+        #di #usiness .top #right ul li{
+            width: 100%;
+            height: 46%;
+            /*border: solid 1px red;*/
+        }
+        #di #usiness .middle{
+            width: 100%;
+            height:45px ;
+            /*border: solid 1px red;*/
+        }
+        #di #usiness .middle ul{
+            width: 100%;
+            height: 100%;
+            list-style:none;
+            display: flex;
+        }
+        #di #usiness .middle ul li{
+            flex: 1;
+            height: 100%;
+            /*border: solid 1px red;*/
+            text-align:center;
+            line-height:240%;
+        }
+        #di #usiness .bottom{
+            width: 100%;
+            height: 28%;
+            /*border: solid 1px red;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #di #usiness .bottom div{
+            width: 25%;
+            height: 54%;
+            /*border: solid 1px red;*/
+        }
+        a{
+            text-decoration: none;
+            /*更改a标签颜色*/
+        }
+
+        /*点击加入购物车弹出页面*/
+        #di #bottom ul li:nth-child(4):hover .shop{
+            display: block;
+            width: 100%;
+            height: 533px;
+            background-color: white;
+            position: fixed;
+            /*处于底部*/
+            bottom: 0;
+            z-index: 11;
+            /*border: solid 1px red;*/
+            left: 0;
+        }
+
+
 
     </style>
 </head>
@@ -249,7 +345,7 @@
     <div id="top">
         <ul>
             <li class="topleft">
-                <span class="iconfont" >&#xe606;</span>
+                <a href="天猫.html"><span class="iconfont" >&#xe606;</span></a>
             </li>
             <li>商品</li>
             <li>评价</li>
@@ -258,7 +354,7 @@
         </ul>
     </div>
     <!-- 上悬浮框 空-->
-    <div style="width: 100%;height: 44px;position: relative"></div>
+    <div style="height: 44px;position: relative"></div>
 
 
     <div id="img">
@@ -284,15 +380,15 @@
 
     <div id="font2">
         <div style=";border-bottom:solid 1px #f7f7f8;">
-            <span style="color: #9B9B9B;font-size:14px;padding-left:3%">选择</span>
-            <div style="color:#051B28;font-size:14px;padding-left:2%;">请选择颜色分类</div>
-            <span class="iconfont" style="margin-left:-20%;color: #9B9B9B;font-size:13px;">&#xe62f;</span>
+            <span style="color: #9B9B9B;font-size:14px;margin-left:3%">选择</span>
+            <div style="color:#051B28;font-size:14px;margin-left:2%;">请选择颜色分类</div>
+            <span class="iconfont" style="margin-right:4%;color: #9B9B9B;font-size:13px;">&#xe62f;</span>
         </div>
 
         <div>
-            <span style="color: #9B9B9B;font-size:14px;padding-left:3%">参数</span>
-            <div style="color:#051B28;font-size:14px;padding-left:2%;">包装方式 包装规格...</div>
-            <span class="iconfont" style="margin-left:-20%;color: #9B9B9B;font-size:13px;">&#xe62f;</span>
+            <span style="color: #9B9B9B;font-size:14px;margin-left:3%">参数</span>
+            <div style="color:#051B28;font-size:14px;margin-left:2%;">包装方式 包装规格...</div>
+            <span class="iconfont" style="margin-right:4%;color: #9B9B9B;font-size:13px;">&#xe62f;</span>
         </div>
     </div>
 
@@ -300,7 +396,7 @@
     <div id="evaluation">
         <div style="width: 100%;height: 29px;display: flex;color:#666;padding-left: 2.4%;line-height:180%;font-size: 15px">
             商品评价(1491)
-            <b><div style="width:70px;color: red;margin-left: 242%;font-size: 13px">查看全部<span class="iconfont" style="font-size:12px;padding-left: 8%">&#xe62f;</span></div></b>
+            <b><div style="width:70px;color: red;margin-left: 242%;font-size: 13px">查看全部<span class="iconfont" style="font-size:12px;margin-left: 8%">&#xe62f;</span></div></b>
         </div>
 
         <div class="evaluation">
@@ -323,7 +419,41 @@
         </div>
     </div>
 
+    <div id="usiness">
+        <div class="top">
+            <div id="left">
+                <img src="//img.alicdn.com/imgextra//c7/61/TB1RJYPjACWBuNjy0FaSutUlXXa.jpg_120x120Q50s50.jpg_.webp" aria-label="店铺标志">
+            </div>
+            <div id="right">
+                <ul>
+                    <li style="font-size: 16px">凯瑞玛旗舰店</li>
+                    <li ><img src="//img.alicdn.com/tfs/TB1u5sBnlfH8KJjy1XbXXbLdXXa-198-36.png_120x120Q90s50.jpg_.webp?getAvatar=avatar" aria-label="装饰图" style="width: 28%;height: 58%;margin-top: 2%"></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="middle">
+            <ul>
+            <li>
+                <span style="color: #666;font-size: 12px">宝贝描述</span>
+                <span style="color: red;font-size: 12px">4.9</span>
+            </li>
+            <li>
+                <span style="color: #666;font-size: 12px">卖家服务</span>
+                <span style="color: red;font-size: 12px">4.8</span>
+            </li>
+            <li>
+                <span style="color: #666;font-size: 12px">物流服务</span>
+                <span style="color: red;font-size: 12px">4.8</span>
+            </li>
+            </ul>
+        </div>
+
+        <div class="bottom">
+            <div style="color: red;font-size: 13px;text-align: center;line-height: 170%;border-radius: 50px;">全部商品</div>
+            <div style="color: red;font-size: 13px;text-align: center;line-height: 170%;border-radius: 50px;margin-left: 5%">进入店铺</div>
+        </div>
+    </div>
 
     <div id="chanpin">
         产品基本信息
@@ -349,6 +479,7 @@
         <img class="lazyImg" src="//img.alicdn.com/tfs/TB1k9XsQpXXXXXLXpXXXXXXXXXX-750-368.png_760x760Q90s50.jpg_.webp" aria-label="商品详情图">
     </div>
 
+        <!--加入购物车-->
 
 
     <!--下悬浮框-->
@@ -369,7 +500,101 @@
                 <span>收藏</span>
             </li>
 
-            <li style="width:31.2%;height: 100%;background-color:#FF9500;text-align: center;line-height: 380%;color: white;font-size:14px">加入购物车</li>
+            <li class="in" style="width:31.2%;height: 100%;background-color:#FF9500;text-align: center;line-height: 380%;color: white;font-size:14px">
+                加入购物车
+                <!--加入购物车-->
+                <!--下悬浮框-->
+                <div class="shop">
+
+                    <div class="rr">
+                        <div class="left">
+                            <img src="//img.alicdn.com/imgextra/i1/2455568780/O1CN01s4YU0V2EjI3ad8R6n_!!2455568780-0-lubanu-s.jpg_200x200Q50s50.jpg" aria-label="选中的商品图">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li style="color: red;font-size: 16px">￥6.8-36.6</li>
+                                <li style="height: 21%;font-size: 13px;color: black">库存 10641件</li>
+                                <li style="height: 22%;font-size: 13px;color: black">请选择：颜色分类</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ww">
+                        <div><span>颜色分类</span></div>
+
+                        <div>
+                            <ul>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                                <li>
+                                    <img class="prop-img" src="//gw.alicdn.com/bao/uploaded/i2/2455568780/TB2S8wMeVkoBKNjSZFEXXbrEVXa_!!2455568780.jpg_80x80.jpg">
+                                    <span>草莓味75g</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ee">
+                        <span>购买数量</span>
+                        <div><button style="width: 20%;height: 96%;font-size: 19px">-</button> <input style="width: 20%;height: 90%;position: relative;top: -5%" type="number" value="1"> <button style="width: 20%;height: 96%;font-size: 19px">+</button></div>
+                    </div>
+
+                    <div class="qq">确定</div>
+                </div>
+
+            </li>
+
+
             <li style="width:31.2%;height: 100%;background-color:#FF0036;text-align: center;line-height: 380%;color: white;font-size:14px">立即够买</li>
         </ul>
     </div>
